@@ -22,8 +22,10 @@ body {
 }
 
 @media (max-width:768px) {
-.top-image-container { text-align: center;
-}
+
+  .top-image-container {
+    text-align: center;
+  }
 
 }
 
