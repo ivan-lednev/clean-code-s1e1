@@ -6,22 +6,22 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="top-image-container">
+  <div class="instructions">
     <img src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
     <aside>
       <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </aside>
   </div>
-  <main class="action-items-container">
-    <section id="add-item-title">
-      <label for="new-task">Add Item</label>
+  <main class="todo-items">
+    <section class="item-block">
+      <label for="new-task" class="item-block__title">Add Item</label>
       <div class="task-row-container">
-        <input id="new-task"class="task" type="text">
+        <input id="new-task" class="task" type="text">
         <button>Add</button>
       </div>
     </section>
-    <section>
-      <h3>Todo</h3>
+    <section class="item-block">
+      <h3 class="item-block__title">Todo</h3>
       <ul id="incomplete-tasks">
         <li>
           <input type="checkbox">
@@ -43,18 +43,20 @@
         </li>
       </ul>
     </section>
-    <h3>Completed</h3>
-    <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg" alt="">
-        </button>
-      </li>
-    </ul>
+    <section class="item-block">
+      <h3 class="item-block__title">Completed</h3>
+      <ul id="completed-tasks">
+        <li>
+          <input type="checkbox" checked>
+          <label class="task">See the Doctor</label>
+          <input type="text" class="task">
+          <button class="edit">Edit</button>
+          <button class="delete">
+              <img src="./remove.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </section>
   </main>
   <script src="app.js"></script>
 </body>

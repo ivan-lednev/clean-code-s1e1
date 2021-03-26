@@ -6,30 +6,30 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.top-image-container {
+.instructions {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.top-image-container img {
+.instructions img {
   width: 100%;
 }
 
-.top-image-container .more-info {
+.instructions .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .top-image-container {
+  .instructions {
     text-align: center;
   }
 
 }
 
-.action-items-container {
+.todo-items {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -55,7 +55,8 @@ h3 {
   list-style: none;
 }
 
-input,button{
+input,
+button {
   outline: none;
 }
 
@@ -73,9 +74,9 @@ button:hover {
   color: #3a3A3a;
 }
 
-/* Heading */
-h3,
-label[for="new-task"] {
+/* item block */
+
+.item-block__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
